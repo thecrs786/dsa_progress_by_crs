@@ -1,5 +1,4 @@
 /*
-Sudoku Solver Notes and Implementation
 
 Problem (LeetCode 37 - Sudoku Solver):
 - Given a partially filled 9x9 Sudoku board, fill it such that:
