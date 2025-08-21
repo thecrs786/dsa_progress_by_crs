@@ -1,0 +1,15 @@
+# --- Build artifacts ---
+*.exe
+*.out
+*.o
+*.obj
+*.class
+*.log
+
+# --- OS/Editor junk ---
+.DS_Store
+Thumbs.db
+
+# --- Keep VS Code settings (optional) ---
+# (Remove this if you don't want to track .vscode)
+# !.vscode/
