@@ -13,7 +13,7 @@ using namespace std;
 int main(){
 
 cout << "thecrs"; // OR std::cout << "thecrs";  if didn't use namepace std above
-
+cout<<"\nHello World"<<endl;
 // cout << "thecrs" << endl;  --> to move to next line for next output
 // or  cout << "thecrs" << "\n"; --> \n is faster
 // or  cout << "thecrs\n"; --> \n is faster
