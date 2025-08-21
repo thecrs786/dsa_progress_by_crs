@@ -25,7 +25,7 @@ cout << age << endl;
 
 cout<< "Name = " << "Hamid\n" << "Age = " << age << endl;
 
-cout <<"Size Of Integer"<<sizeof(age) << endl;  // getting size of variable
+cout <<"Size Of Integer : "<<sizeof(age) << endl;  // getting size of variable
 
 cout << false << endl; // --> 0
 cout << true << endl; // --> 1
