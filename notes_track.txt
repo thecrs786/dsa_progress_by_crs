@@ -147,7 +147,7 @@ notes_track.txt
 142_Maths_GCD_GeeksForGeeks_MostOptimized_2.cpp
 143_Maths_LCM_GeeksForGeeks_BruteForce.cpp
 144_Maths_LCM_GeeksForGeeks_MostOptimized.cpp
-145_Maths_ReverseNumber_MostOptimized_7_.cpp
+145_Maths_ReverseNumber_Leetcode_7_MostOptimized.cpp
 146_Maths_ModuloArithmetics.cpp
 147_PlusOne_Leetcode_66_MostOptimized.cpp
 148_2dArrays.cpp
