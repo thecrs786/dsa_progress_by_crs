@@ -192,6 +192,8 @@ notes_track.txt
 187_Permutations_Leetcode_46_MostOptimized.cpp
 188_N-Queens_Leetcode_51_MostOptimized.cpp
 189_SudokuSolver_Leetcode_37_Optimized.cpp
+190_RatInAMaze_GeeksForGeeks_MostOPtimized.cpp
+191_RatInAMaze_GeeksForGeeks_OPtimized.cpp
 
 
 README.md
