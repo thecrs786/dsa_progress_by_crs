@@ -19,6 +19,18 @@ We recursively explore all possibilities:
 
 We use a "remaining" variable to keep track of what is left to reach target.
 
+// 🔹 Why duplicates are not possible here:
+// 1. LeetCode 39 guarantees that all candidates are distinct → no repeated elements in input.
+// 2. Recursion always moves forward (i → i+1) after excluding a candidate, so permutations like [3,2] are never generated.
+// 3. Even with multiple inclusions of the same element, each combination is built in a fixed order, ensuring uniqueness.
+//
+// 🔹 If input could have duplicates (e.g., [2,3,2,5]):
+// - Skipping the first 2 and including the second 2 could create duplicate combinations.
+// - To manage this, we could either:
+//   a) Sort the array and skip duplicates during recursion: if(i > start && candidates[i] == candidates[i-1]) continue;
+//   b) Or use a set<vector<int>> to automatically store only unique combinations.
+
+
 **************************************************************************************
 
 🔹 Key Insights:
