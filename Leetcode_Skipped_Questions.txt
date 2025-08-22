@@ -1,9 +1,0 @@
-Leetcode Skipped Questions:
-
-1. Pow(x, n) -  (50 on leetcode) : (not in notes ) : Lecture 13 (Apna College DSA Series)
-Reason: Requires strong bit manipulation concepts for optimized solution.
-Recommendation: Practice binary representation, bitwise operations, and recursion.
-Come back later when you're ready to implement fast exponentiation.
-
-2. Find the Duplicate number - (287 on leetcode) : (165 in notes) : Lecture 38 (Apna College DSA Series)
-Recommendation -> learn the concept of linked list and cycling in linked list
