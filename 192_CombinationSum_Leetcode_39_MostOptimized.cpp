@@ -62,7 +62,6 @@ public:
     void helper(vector<vector<int>> &result,
                 vector<int> &candidates,
                 vector<int> &ans,
-                int sum,
                 int remaining,
                 int i) {
         
@@ -77,11 +76,11 @@ public:
 
         // 🔹 Choice 1: Include candidates[i] (multiple times possible)
         ans.push_back(candidates[i]);
-        helper(result, candidates, ans, sum + candidates[i], remaining - candidates[i], i);
+        helper(result, candidates, ans, remaining - candidates[i], i);
         ans.pop_back(); // backtrack
 
         // 🔹 Choice 2: Exclude candidates[i] and move forward
-        helper(result, candidates, ans, sum, remaining, i + 1);
+        helper(result, candidates, ans, remaining, i + 1);
     }
 
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
@@ -91,7 +90,7 @@ public:
         // Sorting is OPTIONAL, but helps with pruning
         sort(candidates.begin(), candidates.end());
 
-        helper(result, candidates, ans, 0, target, 0);
+        helper(result, candidates, ans, target, 0);
         return result;
     }
 };
