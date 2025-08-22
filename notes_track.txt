@@ -1,4 +1,8 @@
-000_LeetcodeSkippedQuestions.cpp
+LeetcodeSkippedQuestions.txt
+rough.cpp
+notes_track.txt
+
+
 001_Output.cpp
 002_DataTypes.cpp
 003_Typecasting.cpp
@@ -187,5 +191,10 @@
 186_SubsetsII_Leetcode_90_MostOptimized.cpp
 187_Permutations_Leetcode_46_MostOptimized.cpp
 188_N-Queens_Leetcode_51_MostOptimized.cpp
+189_SudokuSolver_Leetcode_37_Optimized.cpp
 
-rough.cpp
+
+README.md
+.vscode
+.gitignore
+.git
