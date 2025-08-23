@@ -249,6 +249,11 @@
     - Optimized (193)
     Category: Backtracking
 
+51. Check Knight Configuration Tour - (2596)
+    - Optimized(198)
+    - More Optimized(199)
+    Cateogary: Backtracking With DFS
+
 
 --> GEEKSFORGEEKS
 

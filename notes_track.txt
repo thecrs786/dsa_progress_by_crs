@@ -200,6 +200,8 @@ rough.cpp
 195_QuickSort_GeeksForGeeks.cpp
 196_CountInversions_GeeksForGeeks_BruteForce.cpp
 197_CountInversions_GeeksForGeeks_MostOptimized.cpp
+198_CheckKnightTourConfiguration_Leetcode_2596_Optimized.cpp
+199_CheckKnightTourConfiguration_Leetcode_2596_MoreOptimized.cpp
 
 
 README.md
