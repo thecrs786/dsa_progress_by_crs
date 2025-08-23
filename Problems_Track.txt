@@ -285,3 +285,8 @@
    - Optimized (191)
    Category: Backtracking, Recursion
 
+8. Count Inversions
+   - Brute Force (196)
+   - Most Optimized (197)
+   Category: Backtracking, Merge Sort
+

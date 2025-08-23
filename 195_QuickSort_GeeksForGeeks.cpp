@@ -64,14 +64,14 @@ class Solution {
         int idx = st - 1;        // boundary index for <= pivot region
         int pivot = arr[end];    // pivot value (last element)
         
-        for (int j = st; j < end; j++) {  // iterate from st to end-1
+        for (int j = st; j < end; j++) {  // iterate from st to end-1 OR IERATE TO end to avoid extra swap in line 75 & 76
             if (arr[j] <= pivot) {        // if current element <= pivot  NOTE : use >= for decreasing order
                 idx++;                    // expand boundary
                 swap(arr[idx], arr[j]);   // place element into <= region
             }
         }
 
-        // Place pivot in its correct sorted position (idx+1)
+        // Place pivot in its correct sorted position (idx+1) OR JUST USE j<=end in line 67
         idx++;
         swap(arr[idx], arr[end]);
 
