@@ -1,6 +1,6 @@
-LeetcodeSkippedQuestions.txt
+Problems_Track.txt
+Notes_Track.txt
 rough.cpp
-notes_track.txt
 
 
 001_Output.cpp
@@ -197,6 +197,7 @@ notes_track.txt
 192_CombinationSum_Leetcode_39_MostOptimized.cpp
 193_PalindromePartitioning_Leetcode_131_Optimized.cpp
 194_MergeSort_GeeksForGeeks.cpp
+195_QuickSort_GeeksForGeeks.cpp
 
 
 README.md

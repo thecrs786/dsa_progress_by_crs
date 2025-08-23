@@ -266,6 +266,9 @@
    - Selection Sort (097) (Category: Sorting, Brute Force)
    - Insertion Sort (098) (Category: Sorting, Brute Force)
 
+   - Merge Sort (194) (Category: Sorting, Divide and Conquer)
+   - Quick Sort (195) (Category: Sorting, Divide and Conquer, Pivot Partition)
+
 5. GCD
    - Brute Force (140)
    - Most Optimized (141)
@@ -282,5 +285,3 @@
    - Optimized (191)
    Category: Backtracking, Recursion
 
-8. Merge Sort (194)
-   Category: Sorting, Divide and Conquer

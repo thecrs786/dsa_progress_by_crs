@@ -22,6 +22,8 @@
 #include <vector>
 using namespace std;
 
+// For arranging in decreasing order, use >= in merge comparison in line 45
+
 class Solution {
 public:
     /***********************************************************************************
@@ -40,7 +42,7 @@ public:
 
         // Traverse both halves simultaneously and pick smaller element
         while (i <= mid && j <= end) {
-            if (arr[i] <= arr[j]) {
+            if (arr[i] <= arr[j]) {   // use >= instead of <= for descending order
                 temp.push_back(arr[i]); // Left element is smaller → keep order
                 i++;
             } else {
@@ -63,7 +65,7 @@ public:
 
         // Copy sorted temp back into arr[st...end]
         for (int k = 0; k < temp.size(); k++) {
-            arr[st + k] = temp[k];
+            arr[st + k] = temp[k]; // Overwrite original array segment
         }
     }
 
