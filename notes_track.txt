@@ -204,6 +204,9 @@ rough.cpp
 199_CheckKnightTourConfiguration_Leetcode_2596_MoreOptimized.cpp
 200_OOPS_ObectOrientedProgrammingSystem_Introduction.cpp
 201_OOPS_Constructor.cpp
+202_OOPS_CopyConstructor.cpp
+203_OOPS_ShallowCopy.cpp
+204_OOPS_DeepCopy.cpp
 
 
 README.md

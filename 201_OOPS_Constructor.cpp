@@ -91,8 +91,19 @@ public:
     // Parameterized Constructor
     Student(string n, int a) { // constructor with parameters, can have multiple parameters
         name = n; // initializing class members with parameters
+      //  name = class' name , n = parameter's name
+      // if we don't use different names, we can use 'this' pointer
+      // this->name = name; // 'this' pointer points to the current object
+
         age = a;  // initializing class members with parameters
+
     }
+
+    // example of this pointer usage
+    
+   // Student(int rollNo){ //no difference in parameter name and class member name
+    //    this->rollNo = rollNo; // using 'this' pointer to distinguish between class member and parameter
+    //} we cannot have two constructors with the same signature (int) even if you intend one to set rollNo and one to set age.
 
    // There can be multiple constructors in a class with different parameters (Constructor Overloading)
 
@@ -106,6 +117,7 @@ public:
     void info(){
         cout<<"Name: "<<name<<endl;
         cout<<"Age: "<<age<<endl;
+        cout<<"Roll: "<<rollNo<<endl;
     }
 };
 
@@ -149,6 +161,8 @@ int main(){
     // it is used to access the members of the current object
     // this->prop is same as *(this).prop
 
+    Student s4(22);
+    s4.info(); // prints age 22
     
 
     return 0;
