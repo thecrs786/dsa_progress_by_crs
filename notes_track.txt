@@ -207,6 +207,8 @@ rough.cpp
 202_OOPS_CopyConstructor.cpp
 203_OOPS_ShallowCopy.cpp
 204_OOPS_DeepCopy.cpp
+205_OOPS_Destructor.cpp
+206_OOPS_Inheritance.cpp
 
 
 README.md
