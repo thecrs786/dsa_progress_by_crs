@@ -13,6 +13,7 @@
         "format": "cpp",
         "initializer_list": "cpp",
         "ranges": "cpp",
-        "text_encoding": "cpp"
+        "text_encoding": "cpp",
+        "new": "cpp"
     }
 }
