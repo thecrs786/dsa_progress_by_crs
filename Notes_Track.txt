@@ -215,6 +215,9 @@ rough.cpp
 210_OOPS_Abstraction.cpp
 211_OOPS_StaticKeyword.cpp
 212_LinkedList_UsingClass.cpp
+213_ReverseLinkedList_Leetcode_206_MostOptimized.cpp
+214_MiddleOfTheLinkedList_Leetcode_876_Optimized.cpp
+215_MiddleOfTheLinkedList_Leetcode_876_MostOptimized.cpp
 
 README.md
 .vscode

@@ -254,6 +254,15 @@
     - More Optimized(199)
     Category: Backtracking With DFS
 
+52. Reverse Linked List - (206)
+    - Most Optimized(213)
+    Category: Linked List, Pointers
+
+53. Middle Of the Linked List - (876)
+    - Optimized(214)
+    - Most Optimized(215)
+    Category: Linked List, Slow and Fast Pointer
+
 
 --> GEEKSFORGEEKS
 

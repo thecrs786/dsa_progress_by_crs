@@ -49,5 +49,8 @@ int main(){
 
     cout<<s1.cgpaptr<<endl; // prints address of cgpa
     cout<<*(s1.cgpaptr)<<endl; // prints value of cgpa
+
+
+    cout<<"End of main"<<endl; // deconstructor is called after the end of program
     return 0;
 }
