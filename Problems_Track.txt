@@ -267,6 +267,15 @@
     - Most Optimized(216)
     Category: Cycle in Linked List, Slow and Fast Pointers, Floyd's Cycle Detection
 
+55. Linked List Cycle II - (142)
+    - Most Optimized(217)
+    Category: Cycle in Linked List, Slow and Fast Pointers, Floyd's Cycle Detection, Detecting Starting of cycle
+
+55. Merge Two Sorted Lists - (21)
+    - Most Optimized(218)
+    Category: Linked List, Recursion, Merge(Sorting)
+
+
 --> GEEKSFORGEEKS
 
 1. Book Allocation Problem (093)
