@@ -263,6 +263,9 @@
     - Most Optimized(215)
     Category: Linked List, Slow and Fast Pointer
 
+54. Linked List Cycle - (141)
+    - Most Optimized(216)
+    Category: Cycle in Linked List, Slow and Fast Pointers, Floyd's Cycle Detection
 
 --> GEEKSFORGEEKS
 
