@@ -221,6 +221,9 @@ rough.cpp
 216_LinkedListCycle_Leetcode_141_MostOptimized.cpp
 217_LinkedListCycleII_Leetcode_142_MostOptimized.cpp
 218_MergeTwoSortedLists_Leetcode_21_MostOptimized.cpp
+219_CopyListWithRandomPointer_Leetcode_138_Optimized.cpp
+220_DoublyLinkedList.cpp
+
 
 README.md
 .vscode
