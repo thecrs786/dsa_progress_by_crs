@@ -102,7 +102,7 @@ public:
                 // if found, add frequency (all those subarrays are valid)
                 count += m[val];
                 // update frequency of this prefixSum for future
-                m[prefixSum[j]]++;
+                m[val]++;
             }
         }
 

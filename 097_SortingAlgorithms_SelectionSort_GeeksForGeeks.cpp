@@ -11,7 +11,7 @@ vector<int> SelectionSort(vector<int>& nums) {
     size_t n = nums.size(); // Total number of elements in the array
 
     // Outer loop runs from 0 to n-2 because the last element will automatically be in correct position
-    for (size_t i = 0; i < n - 1; i++) {
+    for (size_t i = 0; i <=n - 2; i++) {
 
         // Assume the current index holds the smallest element
         size_t smallestIdx = i;

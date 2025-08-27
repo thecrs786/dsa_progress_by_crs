@@ -26,7 +26,7 @@
    - Most Optimized (056)
    Category: Bit Manipulation, Hashing
 
-2. Maximum Subarray Sum - (53)
+2. Maximum Subarray - (53)
    - Brute Force (058)
    - Most Optimized (Kadane’s Algorithm) (059)
    Category: Dynamic Programming, Greedy
@@ -276,8 +276,12 @@
     Category: Linked List, Recursion, Merge(Sorting)
 
 57. Copy List With Random Pointer - (138)
-    - Optimized (219)
+    - Optimized(219)
     Category: Linked List, Hashing, Deep Copy
+
+58. Valid Sudoku - (36)
+    - Optimized(220)
+    Category: Recursion, Vector
 
 --> GEEKSFORGEEKS
 
