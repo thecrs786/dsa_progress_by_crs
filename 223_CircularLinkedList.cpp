@@ -130,9 +130,12 @@ public:
                 head = tail = NULL;
             }
             else{                   // Multi-node
-                tail->next = temp->next; // Tail points to new head
-                head = temp->next;       // Update head
+                head = head->next; // move head to next node
+                tail->next=head;     // tail now points to new head
+
+               // temp->next = NULL  optional because we're deleteing temp anyway.            
             }
+
 
             delete temp;             // Free memory
             size--;
@@ -151,6 +154,7 @@ public:
             }
             else{
                 tail->next = temp->next; // Update tail->next to new head
+              // temp->next = NULL  optional because we're deleteing temp anyway           
             }
 
             delete temp;
@@ -177,6 +181,7 @@ public:
                 }
                 temp2->next = head; // Maintain circularity
                 tail = temp2;       // Update tail
+              //// temp->next = NULL  optional because we're deleteing temp anyway  
             }
 
             delete temp;
@@ -201,6 +206,7 @@ public:
                 }
                 temp2->next = tail->next;   // Maintain circularity
                 tail = temp2;               // Update tail
+                // temp->next = NULL  optional because we're deleteing temp anyway
             }
 
             delete temp;

@@ -89,7 +89,9 @@ public:
         }
     }
 
+    // PUSH_FRONT
     // Insert a node at the front of the list
+
     void push_front(int val) {
         Node* newNode = new Node(val); // create new node
 
@@ -105,8 +107,10 @@ public:
         head = newNode;                // update head to new node
         size++;                        // increment size
     }
-
+    
+    // PUSH_BACK
     // Insert a node at the end of the list
+
     void push_back(int val) {
         Node* newNode = new Node(val); // create new node
 
@@ -122,8 +126,10 @@ public:
         tail = newNode;                // update tail to new node
         size++;                        // increment size
     }
-
+    
+    // POP_FRONT
     // Remove a node from the front of the list
+
     void pop_front() {
         if (head != NULL) {            // check if list is non-empty
             Node* temp = head;         // store old head for deletion
@@ -133,6 +139,7 @@ public:
             } else {                   // multiple nodes
                 head = head->next;     // move head forward
                 head->prev = NULL;     // new head's prev becomes NULL
+              // temp->next = NULL  optional because we're deleteing temp anyway  
             }
 
             delete temp;               // free memory of removed node
@@ -141,8 +148,10 @@ public:
             cout << "Error: List is already empty" << endl;
         }
     }
-
+    
+    // POP_BACK
     // Remove a node from the end of the list
+
     void pop_back() {
         if (head != NULL) {            // check if list is non-empty
             Node* temp = tail;         // store old tail for deletion
@@ -152,6 +161,7 @@ public:
             } else {                   // multiple nodes
                 tail = tail->prev;     // move tail backward
                 tail->next = NULL;     // new tail's next becomes NULL
+              // temp->next = NULL  optional because we're deleteing temp anyway  
             }
 
             delete temp;               // free memory of removed node
