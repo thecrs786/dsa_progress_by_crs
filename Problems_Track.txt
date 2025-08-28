@@ -283,6 +283,10 @@
     - Optimized(220)
     Category: Recursion, Vector
 
+59. Power Of Three - (326)
+    - Optimized(221)
+    Category: Bit Manipulation, Math
+
 --> GEEKSFORGEEKS
 
 1. Book Allocation Problem (093)

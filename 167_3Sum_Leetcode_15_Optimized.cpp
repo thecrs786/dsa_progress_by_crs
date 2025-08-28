@@ -46,7 +46,7 @@ public:
         // We iterate i from 0 to n-1 (we could stop at n-3 but leaving as n is harmless because inner loop won't run)
         for(int i = 0; i < n; i++){
             int tar = -nums[i];       // target sum for the other two numbers
-            set<int> s;               // set of values we've seen so far in this i-iteration
+            unordered_set<int> s;               // set of values we've seen so far in this i-iteration
                                       // Note: using std::set<int> -> O(log n) operations
                                       // Alternative: unordered_set<int> s; // average O(1) operations
 

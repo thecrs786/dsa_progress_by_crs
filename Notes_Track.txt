@@ -223,6 +223,8 @@ rough.cpp
 218_MergeTwoSortedLists_Leetcode_21_MostOptimized.cpp
 219_CopyListWithRandomPointer_Leetcode_138_Optimized.cpp
 220_ValidSudoku_Leetcode_36_Optimized.cpp
+221_PowerOfThree_Leetcode_326_Optimized.cpp
+
 
 
 README.md

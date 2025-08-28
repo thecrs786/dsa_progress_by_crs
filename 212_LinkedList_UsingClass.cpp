@@ -109,7 +109,7 @@ class List{ // List manages the head/tail pointers and provides operations on th
          temp = temp->next; // move to next node (may become NULL when we reach tail)
          if(temp!=NULL) cout<<" -> "; // if there is a next node, print arrow separator
          else cout<<"]"<<endl; // after traversing the linked list, close bracket and newline when we reached end
-        }if(tail==NULL) cout<<"Empty]"<<endl; // in case of empty linked list — this line is redundant because we already handled head==NULL; kept as-is per your request
+        }
     }
 
     // GET SIZE OF LINKED LIST
