@@ -229,7 +229,12 @@ rough.cpp
 224_FlattenAMultilevelDoublyLinkedList_Leetcode_430_Optimized.cpp
 225_ReverseNodesInk-Group_Leetcode_25_Optimized.cpp
 226_SwapNodesInPairs_Leetcode_24_Optimized.cpp
-
+227_SwapNodesInPairs_Leetcode_24_Optimized_2.cpp
+228_Stack_UsingVector.cpp
+229_Stack_UsingLinkedList.cpp
+230_ValidParenthesis_Leetcode_20_MostOptimized.cpp
+231_StockSpanProblem_UsingFunction.cpp
+232_OnlineStockSpan_Leetcode_901_MostOptimized.cpp
 
 README.md
 .vscode
