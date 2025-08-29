@@ -1,37 +1,63 @@
+/*
+LeetCode Problem: 25. Reverse Nodes in k-Group
+
+Problem in brief:
+Given a linked list, reverse the nodes of the list k at a time and return its modified list.
+- k is a positive integer and is less than or equal to the length of the linked list.
+- If the number of nodes is not a multiple of k then left-out nodes in the end should remain as-is.
+- You may not alter the values in the nodes, only nodes themselves may be changed.
+
+Example Test Cases:
+
+Example 1:
+Input: head = [1,2,3,4,5], k = 2
+Output: [2,1,4,3,5]
+Explanation:
+- First k-group: [1,2] -> reversed to [2,1]
+- Second k-group: [3,4] -> reversed to [4,3]
+- Remaining node [5] has less than k nodes, remains as-is
+
+Example 2:
+Input: head = [1,2,3,4,5], k = 3
+Output: [3,2,1,4,5]
+Explanation:
+- First k-group: [1,2,3] -> reversed to [3,2,1]
+- Remaining nodes [4,5] have less than k nodes, remain as-is
+
+Example 3:
+Input: head = [1,2,3,4,5,6,7,8], k = 4
+Output: [4,3,2,1,8,7,6,5]
+Explanation:
+- First k-group: [1,2,3,4] -> reversed to [4,3,2,1]
+- Second k-group: [5,6,7,8] -> reversed to [8,7,6,5]
+- All nodes processed, no leftover
+
+Example 4:
+Input: head = [1,2], k = 3
+Output: [1,2]
+Explanation:
+- Less than k nodes in list, nothing reversed
+
+Key Takeaways:
+- Only reverse exact k nodes
+- If remaining nodes < k, leave as-is
+- Recursive calls automatically handle connecting segments
+
+Solution provided: Recursive reversal of k nodes at a time
+
+Method/Approach: 
+- Recursion + standard linked list reversal of k nodes
+
+Time Complexity: O(n)  // Each node visited exactly once
+Space Complexity: O(n/k) recursion stack space
+Optimality: Not the most optimal (iterative O(1) space version exists)
+Accepted by LeetCode: Yes, will not cause TLE, but recursive stack is extra memory
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-/*
-LeetCode 25: Reverse Nodes in k-Group
-
-Problem Brief:
-- Given a singly linked list, reverse the nodes of the list k at a time and return the modified list.
-- If the number of nodes is not a multiple of k, the remaining nodes should stay as-is.
-- Must change node connections, cannot just swap values.
-
-Solution Name / Method:
-- Recursive reversal of k-sized segments in a linked list.
-- Track the first k nodes, reverse them, recursively process the rest, and connect.
-
-Time Complexity:
-- O(n), each node is visited exactly once.
-
-Space Complexity:
-- O(n/k) due to recursion stack; can be optimized to O(1) with iterative solution.
-
-Optimality:
-- Optimized for readability and correctness.
-- Iterative solution can avoid recursion stack for extremely large lists, but asymptotic complexity is same.
-- Will be accepted by LeetCode, no TLE/MLE under normal constraints.
-
-Key Points:
-1. `prev`, `curr`, `next` are used to reverse k nodes.
-2. `head` becomes tail after reversal, used to connect to the next segment.
-3. Base case: fewer than k nodes left → return head as-is.
-4. Recursive call ensures remaining nodes are processed similarly.
-5. Works correctly for all edge cases including empty list, k=1, and list length not multiple of k.
-*/
-
+// Definition for singly-linked list.
 struct ListNode {
     int val;
     ListNode *next;
@@ -44,85 +70,101 @@ class Solution {
 public:
     ListNode* reverseKGroup(ListNode* head, int k) {
 
-        if(!head) return head; // Base case: empty list
-
+        if(!head) return head; 
         // Step 1: Check if there are at least k nodes to reverse
-        ListNode* curr = head;
-        for(int i = 0; i < k; i++) {
-            if(curr == NULL) return head; // Less than k nodes, return as-is
-            curr = curr->next;
+        ListNode* temp = head;
+        for(int count = 0; count < k; count++) {
+            if(temp == NULL) return head; 
+            // If fewer than k nodes, return head as-is. 
+            // These nodes remain unreversed.
+            temp = temp->next;
         }
 
         // Step 2: Reverse first k nodes
-        ListNode* prev = NULL;       // Previous pointer for reversal
-        ListNode* temp = head;       // Current pointer, start of segment
-        ListNode* next = NULL;       // Temporary pointer to store next node
+        ListNode* prev = NULL;   // Previous pointer, used to reverse links
+        ListNode* curr = head;   // Current node pointer, start of segment
+        ListNode* next = NULL;   // Temporary pointer to store next node
 
-        while(temp != curr) {        // Reverse exactly k nodes
-            next = temp->next;       // Store next node
-            temp->next = prev;       // Reverse link
-            prev = temp;             // Move prev forward
-            temp = next;             // Move temp forward
+        while(curr != temp) {    // Reverse exactly k nodes
+            next = curr->next;   // Store next node before breaking link
+            curr->next = prev;   // Reverse current node's pointer
+            prev = curr;         // Move prev forward (new head of reversed segment)
+            curr = next;         // Move curr forward
         }
 
-        // Step 3: Connect reversed segment with the rest of the list
-        head->next = reverseKGroup(curr, k); // head is now tail after reversal
+        // Step 3: Connect reversed segment with rest of the list
+        // Recursive call to reverse the next segment starting from 'temp'
+        head->next = reverseKGroup(temp, k); 
+        // Explanation:
+        // After reversal, original head becomes tail of this segment.
+        // Its next should point to the head of the next reversed segment.
 
         // Step 4: Return new head of this segment
         return prev;
+        // prev is the new head of the reversed k-group
     }
 };
 
 /*
-Function Logic Explanation:
+Logic and Explanation:
 
-1. Check if there are at least k nodes left; otherwise, return head.
-2. Reverse exactly k nodes using standard linked list reversal logic:
-    - prev tracks previous node
-    - temp tracks current node
-    - next stores next node temporarily
-3. After reversal:
-    - prev points to new head of reversed segment
-    - original head becomes tail of reversed segment
-4. Recursively call reverseKGroup on the remaining nodes (curr) and connect to tail.
-5. Return prev as new head of the segment.
-6. This process continues recursively until the list is fully processed.
+1. Use 'temp' to check if there are enough nodes to reverse.
+   - If nodes < k, we skip reversal for this part of the list.
 
-Edge Cases Handled:
-- Empty list → returns NULL
-- k = 1 → list remains unchanged
-- List length < k → last segment remains unchanged
-- List length multiple of k → all nodes reversed properly
+2. Reverse exactly k nodes using the standard linked list reversal technique:
+   - Maintain three pointers: prev, curr, next
+   - Loop until curr reaches temp
+   - Reverse the link of each node to point to prev
+
+3. Recursive call:
+   - head->next = reverseKGroup(temp, k)
+   - Connect the current reversed segment to the next segment.
+   - Recursion ensures we process all remaining nodes in k-groups.
+
+4. Return prev:
+   - prev becomes the new head after reversing this segment
+
+Key Insights:
+- head becomes tail after reversal
+- temp acts as a boundary marker for reversal
+- Recursion ensures segments are connected correctly
+- Works correctly for any number of nodes, including less than k at the end
+- Safe for normal constraints but not memory-optimal for huge lists
+
 */
 
-void printList(ListNode* head) {
-    while(head) {
-        cout << head->val;
-        if(head->next) cout << " -> ";
-        head = head->next;
-    }
-    cout << endl;
-}
-
 int main() {
-    // Working Example
-    // Input: 1 -> 2 -> 3 -> 4 -> 5, k = 2
-    // Output: 2 -> 1 -> 4 -> 3 -> 5
-    ListNode* n5 = new ListNode(5);
-    ListNode* n4 = new ListNode(4, n5);
-    ListNode* n3 = new ListNode(3, n4);
-    ListNode* n2 = new ListNode(2, n3);
-    ListNode* n1 = new ListNode(1, n2);
+    // Creating a sample linked list: 1->2->3->4->5
+    ListNode* head = new ListNode(1);
+    head->next = new ListNode(2);
+    head->next->next = new ListNode(3);
+    head->next->next->next = new ListNode(4);
+    head->next->next->next->next = new ListNode(5);
 
-    cout << "Original List: ";
-    printList(n1);
+    int k = 2;
 
     Solution sol;
-    int k = 2;
-    ListNode* newHead = sol.reverseKGroup(n1, k);
+    ListNode* newHead = sol.reverseKGroup(head, k);
 
-    cout << "After reversing in k-groups (k=" << k << "): ";
-    printList(newHead);
+    // Printing the reversed list in k-groups
+    cout << "Reversed list in groups of " << k << ": ";
+    ListNode* temp = newHead;
+    while(temp != nullptr) {
+        cout << temp->val << " ";
+        temp = temp->next;
+    }
+    cout << endl;
 
     return 0;
 }
+
+/*
+Expected Output for k=2:
+Reversed list in groups of 2: 2 1 4 3 5
+
+Explanation:
+- First k-group: 1,2 -> reversed to 2,1
+- Second k-group: 3,4 -> reversed to 4,3
+- Remaining node 5 < k, stays as-is
+- Recursive calls handle connecting the reversed segments
+*/

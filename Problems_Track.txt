@@ -295,6 +295,10 @@
     - Optimized(225)
     Category: Linked List, Recursion
 
+62. Swap Nodes In Pairs - (24)
+    - Optimized(226)
+    Category: Linked List, Recursion
+
 --> GEEKSFORGEEKS
 
 1. Book Allocation Problem (093)
