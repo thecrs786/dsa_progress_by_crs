@@ -235,6 +235,9 @@ rough.cpp
 230_ValidParenthesis_Leetcode_20_MostOptimized.cpp
 231_StockSpanProblem_UsingFunction.cpp
 232_OnlineStockSpan_Leetcode_901_MostOptimized.cpp
+233_NextGreaterElement-I_Leetcode_496_BruteForce.cpp
+234_NextGreaterElement-I_Leetcode_496_MostOptimized.cpp
+
 
 README.md
 .vscode

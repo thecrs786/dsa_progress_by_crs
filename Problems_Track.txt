@@ -309,6 +309,12 @@
         -> Using Function [NOT LEETCODE STYLE] (231)
         -> Using Class and Function [FOR LEETCODE] (232)
 
+65. Next Greater Element I - (496)
+    - Brute Force (233)
+    - Most Optimized(234)
+    Category: Stack, Hashing, LIFO
+
+
 --> GEEKSFORGEEKS
 
 1. Book Allocation Problem (093)
