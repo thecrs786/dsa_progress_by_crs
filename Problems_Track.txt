@@ -287,6 +287,14 @@
     - Optimized(221)
     Category: Bit Manipulation, Math
 
+60. Flatten A Multilevel Doubly Linked List - (430)
+    - Optimized(224)
+    Category: Recursion, Linked List, Pointer Manipulation
+
+61. Reverse Nodes In k-Group - (25)
+    - Optimized(225)
+    Category: Linked List, Recursion
+
 --> GEEKSFORGEEKS
 
 1. Book Allocation Problem (093)
