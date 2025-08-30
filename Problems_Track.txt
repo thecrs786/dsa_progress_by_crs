@@ -314,6 +314,10 @@
     - Most Optimized(234)
     Category: Stack, Hashing, LIFO
 
+66. Add Two Numbers - (02)
+    - Most Optimized(236)
+    Category: Linked List, Math, Stimulation
+
 
 --> GEEKSFORGEEKS
 
