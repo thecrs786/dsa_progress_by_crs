@@ -238,7 +238,10 @@ rough.cpp
 233_NextGreaterElement-I_Leetcode_496_BruteForce.cpp
 234_NextGreaterElement-I_Leetcode_496_MostOptimized.cpp
 236_AddTwoNumbers_Leetcode_2_MostOptimized.cpp
-
+237_MinStack_Leetcode_155_Optimized.cpp
+238_MinStack_Leetcode_155_MostOptimized.cpp
+239_LargestRectangleInHistogram_Leetcode_84_BruteForce.cpp
+240_LargestRectangleInHistogram_Leetcode_84_MostOptimized.cpp
 
 README.md
 .vscode

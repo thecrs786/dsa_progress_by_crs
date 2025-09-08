@@ -318,6 +318,16 @@
     - Most Optimized(236)
     Category: Linked List, Math, Stimulation
 
+67. Min Stack - (155)
+    - Optimized(237)
+    - Most Optimized(238)
+    Category: Stack, Stack Training
+
+68. Largest Rectangle In Histogram - (84)
+    - Brute Force(239)
+    - Most Optimized(240)
+    Category: Stack, Vector
+
 
 --> GEEKSFORGEEKS
 
