@@ -328,6 +328,22 @@
     - Most Optimized(240)
     Category: Stack, Vector
 
+69. Next Greater Element II - (503)
+    - Brute Force(241)
+    - Optimized(242)
+    - Most Optimized(243)
+    Category: Array, Stack, Monotonic Stack
+
+70. Remove Nth Node From End Of The List - (19)
+    - Optimized(244)
+    Category: Linked List, Two Pointers
+
+71. Trapping Rainwater - (42)
+    - Brute Force(245)
+    - Optimized(246)
+    - Most Optimized(247)
+    Category: Array, Two Pointers, DP, Prefix Array, Monotonic Stack
+
 
 --> GEEKSFORGEEKS
 
