@@ -344,6 +344,10 @@
     - Most Optimized(247)
     Category: Array, Two Pointers, DP, Prefix Array, Monotonic Stack
 
+72. LRU Cache (146)
+    - Most Optimized(250)
+    Category: Hash Table, Design, Linked List, Doubly Linked List
+
 
 --> GEEKSFORGEEKS
 
@@ -385,3 +389,7 @@
    - Most Optimized (197)
    Category: Backtracking, Merge Sort
 
+9. The Celebrity Problem
+   - Brute Force(248)
+   - Optimized(249)
+   Category: Stack, Two Pointer, Array
