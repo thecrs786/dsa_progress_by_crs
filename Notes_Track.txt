@@ -252,7 +252,13 @@ rough.cpp
 248_CelebrityProblem_GeeksForGeeks_BruteForce.cpp
 249_CelebrityProblem_GeeksForGeeks_Optimized.cpp
 250_LRU-Cache_Leetcode_146_MostOptimized.cpp
-
+251_Queue_UsingListByStl.cpp
+252_Queue_UsingLinkedList.cpp
+253_CircularQueue.cpp
+254_ImplementStackUsingQueues_Leetcode_225_MostOptimized.cpp
+255_ImplementQueueUsingStacks_Leetcode_232_MostOptimized.cpp
+256_FirstUniqueCharacterInAString_Leetcode_387_Optimized.cpp
+257_FirstUniqueCharacterInAString_Leetcode_387_MostOptimized.cpp
 
 README.md
 .vscode

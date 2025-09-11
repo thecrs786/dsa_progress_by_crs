@@ -348,6 +348,19 @@
     - Most Optimized(250)
     Category: Hash Table, Design, Linked List, Doubly Linked List
 
+73. Implement Stack Using Queues (225)
+    - Most Optimized(254)
+    Category: Stack, Queue, Design
+
+74. Implement Queue Using Stacks (232)
+    - Most Optimized(255)
+    Category: Stack, Queue, Design
+
+75. First Unique Character In A String (387)
+    - Optimized(256)
+    - Most Optimized(257)
+    Category: Hashing, String, Queue
+
 
 --> GEEKSFORGEEKS
 
