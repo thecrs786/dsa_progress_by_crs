@@ -272,6 +272,9 @@ rough.cpp
 267_BinaryTrees_CountOfNodes.cpp
 268_BinaryTrees_SumOfNodes.cpp
 269_SameTree_Leetcode_100_MosstOptimized.cpp
+270_SubtreeOfAnotherTree_Leetcode_572_Optimized.cpp
+271_DiameterOfBinaryTree_Leetcode_543_Optimized.cpp
+
 
 README.md
 .vscode

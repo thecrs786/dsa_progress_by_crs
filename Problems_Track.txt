@@ -374,6 +374,14 @@
     - Most Optimized(269)
     Category: Tree, DFS, BFS, Binary Tree
 
+79. Subtree Of Another Tree (572)
+    - Optimized(270)
+    Category: Tree, Binary Tree, Hashing, DFS
+
+80. Diameter Of A Binary Tree (543)
+    - Optimized(271)
+    Category: Tree, DFS, Binary Tree
+
 --> GEEKSFORGEEKS
 
 1. Book Allocation Problem (093)

@@ -63,13 +63,17 @@ public:
 
     // Helper function that recursively checks if two trees are identical.
     bool helper(TreeNode* p, TreeNode* q) {
-        // Base Case 1:
+        // 1. Base Case 1:
         // If both nodes are NULL, this branch is identical so far.
         if(p == nullptr && q == nullptr) return true;
 
-        // Base Case 2:
+        // 2. Base Case 2:
         // If one node is NULL and the other is not, trees differ here.
         if(p == nullptr || q == nullptr) return false;
+
+        /* INSTEA OF 1 & 2
+        if(p == nullptr || q == nullptr) return p==q; 
+        */
 
         // Base Case 3:
         // If the values of current nodes are not equal, trees differ here.
