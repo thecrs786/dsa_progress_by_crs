@@ -370,6 +370,9 @@
     - Most Optimized(260)
     Category: Array, Greedy 
 
+78. Same Tree (100)
+    - Most Optimized(269)
+    Category: Tree, DFS, BFS, Binary Tree
 
 --> GEEKSFORGEEKS
 
