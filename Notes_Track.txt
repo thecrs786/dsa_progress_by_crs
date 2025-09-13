@@ -259,6 +259,10 @@ rough.cpp
 255_ImplementQueueUsingStacks_Leetcode_232_MostOptimized.cpp
 256_FirstUniqueCharacterInAString_Leetcode_387_Optimized.cpp
 257_FirstUniqueCharacterInAString_Leetcode_387_MostOptimized.cpp
+258_SlidingWindowMaximun_Leetcode_239_BruteForce.cpp
+259_SlidingWindowMaximun_Leetcode_239_MostOptimized.cpp
+260_GasStation_Leetcode_134_MostOptimized.cpp
+
 
 README.md
 .vscode

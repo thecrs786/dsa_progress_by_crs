@@ -361,6 +361,15 @@
     - Most Optimized(257)
     Category: Hashing, String, Queue
 
+76. Sliding Window Maximum (239)
+    - Brute Force(258)
+    - Most Optimized(259)
+    Category: Array, Queue, Sliding Window
+
+77. Gas Station (134)
+    - Most Optimized(260)
+    Category: Array, Greedy 
+
 
 --> GEEKSFORGEEKS
 
