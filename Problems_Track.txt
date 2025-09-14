@@ -380,6 +380,7 @@
 
 80. Diameter Of A Binary Tree (543)
     - Optimized(271)
+    - Most Optimized(272)
     Category: Tree, DFS, Binary Tree
 
 --> GEEKSFORGEEKS
