@@ -427,3 +427,17 @@
    - Brute Force(248)
    - Optimized(249)
    Category: Stack, Two Pointer, Array
+
+10. Top View Of A Binary Tree
+    - Optimized(273)
+    - Most ptimized(274)
+    Category: Binary Tree, DFS/Recursion, BFS/LevelOrder
+
+11. Bottom View Of A Binary Tree
+    - Optimized(275)
+    - Most Optimized(276)
+    Category: Binary Tree, DFS/Recursion, BFS/LevelOrder
+
+12. Kth Level Of A Binary Tree 
+    - Optimized(277)
+    Category: Tree, Level Order Traversal, Binary Tree, DFS
