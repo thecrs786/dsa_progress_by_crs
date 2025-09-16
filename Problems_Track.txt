@@ -383,6 +383,23 @@
     - Most Optimized(272)
     Category: Tree, DFS, Binary Tree
 
+81. Lowest Common Ancestor (236)
+    - Most Optimized(278)
+    Category: Tree, DFS, Binary Tree
+
+82. Construct Binary Tree From PreOrder and InOrder Traversal (105)
+    - Optimized(279)
+    Category: Array, Hash Table, Divide And Conquer, Tree, Binary Tree
+
+83. Binary Tree Paths (257)
+    - Most Optimized(281)
+    Category: Binary Tree, Backtracking, DFS, String
+
+84. Maximum Width Of Binary Tree (662)
+    - Most Optimized(282)
+    Category: Binary Tree, DFS, 
+
+
 --> GEEKSFORGEEKS
 
 1. Book Allocation Problem (093)
@@ -441,3 +458,7 @@
 12. Kth Level Of A Binary Tree 
     - Optimized(277)
     Category: Tree, Level Order Traversal, Binary Tree, DFS
+
+13. Transform To Sum Tree
+    - Most Optimized(280)
+    Category: Tree, Binary Tree
