@@ -399,6 +399,16 @@
     - Most Optimized(282)
     Category: Binary Tree, DFS, 
 
+85. Binary Tree Inorder Traversal (94)
+    - Optimized(283)
+    - Most Optimized(284)
+    Category: Binary Tree, DFS, Stack, Morris Inorder Traversal
+
+86. Flatten Binary Tree To Linked List (114)
+    - Optimized(285)
+    - Most Optimized(286)
+    Category: Binary Tree, Linked List, DFS, Stack
+
 
 --> GEEKSFORGEEKS
 
