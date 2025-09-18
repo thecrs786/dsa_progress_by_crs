@@ -348,63 +348,63 @@
     - Most Optimized(250)
     Category: Hash Table, Design, Linked List, Doubly Linked List
 
-73. Implement Stack Using Queues (225)
+73. Implement Stack Using Queues - (225)
     - Most Optimized(254)
     Category: Stack, Queue, Design
 
-74. Implement Queue Using Stacks (232)
+74. Implement Queue Using Stacks - (232)
     - Most Optimized(255)
     Category: Stack, Queue, Design
 
-75. First Unique Character In A String (387)
+75. First Unique Character In A String - (387)
     - Optimized(256)
     - Most Optimized(257)
     Category: Hashing, String, Queue
 
-76. Sliding Window Maximum (239)
+76. Sliding Window Maximum - (239)
     - Brute Force(258)
     - Most Optimized(259)
     Category: Array, Queue, Sliding Window
 
-77. Gas Station (134)
+77. Gas Station - (134)
     - Most Optimized(260)
     Category: Array, Greedy 
 
-78. Same Tree (100)
+78. Same Tree - (100)
     - Most Optimized(269)
     Category: Tree, DFS, BFS, Binary Tree
 
-79. Subtree Of Another Tree (572)
+79. Subtree Of Another Tree - (572)
     - Optimized(270)
     Category: Tree, Binary Tree, Hashing, DFS
 
-80. Diameter Of A Binary Tree (543)
+80. Diameter Of A Binary Tree - (543)
     - Optimized(271)
     - Most Optimized(272)
     Category: Tree, DFS, Binary Tree
 
-81. Lowest Common Ancestor (236)
+81. Lowest Common Ancestor - (236)
     - Most Optimized(278)
     Category: Tree, DFS, Binary Tree
 
-82. Construct Binary Tree From PreOrder and InOrder Traversal (105)
+82. Construct Binary Tree From PreOrder and InOrder Traversal - (105)
     - Optimized(279)
     Category: Array, Hash Table, Divide And Conquer, Tree, Binary Tree
 
-83. Binary Tree Paths (257)
+83. Binary Tree Paths - (257)
     - Most Optimized(281)
     Category: Binary Tree, Backtracking, DFS, String
 
-84. Maximum Width Of Binary Tree (662)
+84. Maximum Width Of Binary Tree - (662)
     - Most Optimized(282)
     Category: Binary Tree, DFS, 
 
-85. Binary Tree Inorder Traversal (94)
+85. Binary Tree Inorder Traversal - (94)
     - Optimized(283)
     - Most Optimized(284)
     Category: Binary Tree, DFS, Stack, Morris Inorder Traversal
 
-86. Flatten Binary Tree To Linked List (114)
+86. Flatten Binary Tree To Linked List - (114)
     - Optimized(285)
     - Most Optimized(286)
     Category: Binary Tree, Linked List, DFS, Stack
