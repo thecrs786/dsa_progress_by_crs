@@ -1,19 +1,36 @@
 /*
+LeetCode — Problem Notes & Complete Code
 Question Number: 230
-Question: Kth Smallest Element in a BST
-Description: 
-Given a Binary Search Tree (BST), find the k-th smallest element in it.
-BST property ensures that for every node, all values in left subtree < node value < all values in right subtree.
+Title (brief): Kth Smallest Element in a BST
 
-Example 1:
-Input: root = [3,1,4,null,2], k = 1
-Output: 1
-Explanation: Inorder traversal of BST: [1,2,3,4]. 1st smallest = 1.
+Problem (brief):
+  Given the root of a Binary Search Tree (BST) and an integer k, return the k-th smallest element
+  in the BST.
 
-Example 2:
-Input: root = [5,3,6,2,4,null,null,1], k = 3
-Output: 3
-Explanation: Inorder traversal: [1,2,3,4,5,6]. 3rd smallest = 3.
+Examples (as comments):
+  // Example 1:
+  // Input: root = [3,1,4,null,2], k = 1
+  // Tree:
+  //       3
+  //      / \
+  //     1   4
+  //      \
+  //       2
+  // Inorder: [1,2,3,4] -> 1st smallest = 1
+  // Output: 1
+
+  // Example 2:
+  // Input: root = [5,3,6,2,4,null,null,1], k = 3
+  // Tree:
+  //         5
+  //       /   \
+  //      3     6
+  //     / \
+  //    2   4
+  //   /
+  //  1
+  // Inorder: [1,2,3,4,5,6] -> 3rd smallest = 3
+  // Output: 3
 
 Solution Method: Recursive Inorder Traversal with Counter (prevOrder)
 Time Complexity: O(h + k) ~ Average O(log n + k), Worst O(n)

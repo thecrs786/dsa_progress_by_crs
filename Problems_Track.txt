@@ -443,6 +443,12 @@
     - Most Optimized(298)
     Category: Tree, DFS, BST, Binary Tree
 
+95. Lowest Common Ancestor Of A Binary Search Tree - (235)
+    - Most Optimized(299)
+    Category: Tree, DFS, BFS, Binary Tree, BST
+
+
+
 
 --> GEEKSFORGEEKS
 
