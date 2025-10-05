@@ -409,6 +409,40 @@
     - Most Optimized(286)
     Category: Binary Tree, Linked List, DFS, Stack
 
+87. Binary Tree Level Order Traversal - (102)
+    - Most Optimized(287)
+    Category : Binary Tree, DFS, Binary Tree
+
+88. Maximum Depth Of Binary Tree - (104)
+    - Most Optimized(288)
+    Category: Tree, DFS, BFS, Binary Tree
+
+89. Search In A Binary Search Tree - (700)
+    - Most Optimized(290)
+    Category: Tree, Binary Search Tree (BST), Binary Tree
+
+90. Convert Sorted Array To Binary Search Tree - (108)
+    - Most Optimized(291) 
+    Category: Array, BST, Divide And Conquer, Binary Tree
+
+91. Validate Binary Search Tree - (98)
+    - Most Optimized(292)
+    Category: Tree, DFS, BST, Binary Tree
+
+92. Minimum Distance Between BST Nodes - (783)
+    - Optimized(293)
+    - Optimized_2(294)
+    - Most Optimized(295)
+    Category: Tree, DFS, BFS, BST, Binary Tree
+
+93. Minimum Absolute Difference In BST - (530)
+    - Most Optimized(296)
+    Category: Tree, DFS, BFS, BST, Binary Tree
+
+94. Kth Smallest Element In A BST - (230)
+    - Most Optimized(298)
+    Category: Tree, DFS, BST, Binary Tree
+
 
 --> GEEKSFORGEEKS
 

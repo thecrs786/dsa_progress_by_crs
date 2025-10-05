@@ -18,7 +18,7 @@ breakdown:
 (2) spaces --> cout<<"*" (not in i=0  and i=6)
 */
 
-int n=8;
+int n=4;
 
 // TOP
 

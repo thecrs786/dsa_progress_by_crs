@@ -13,24 +13,24 @@
  * - Average time complexity: O(log N).
  * - Worst case (skewed tree): O(N).
  *
- * INORDER TRAVERSAL PROPERTY:
+ * INORDER TRAVERSAL PROPERTY :
  * - Inorder traversal of a BST always gives sorted order.
  *   (Left → Root → Right ensures ascending values).
  *
- * MAIN OPERATIONS:
+ * MAIN OPERATIONS :
  * 1. Insert a node (Recursive + Iterative).
  * 2. Search for a node (Recursive + Iterative).
  * 3. Delete a node (Recursive + Iterative).
  * 4. Traversal (Inorder, Preorder, Postorder).
  *
- * EXTRA:
+ * EXTRA :
  * - Insert after creation is always allowed → call insert again with new value.
  * - Deletion has 3 cases:
  *     a) Node has no child (leaf).
  *     b) Node has 1 child.
  *     c) Node has 2 children → replace with inorder successor.
  *
- * WARNINGS:
+ * WARNINGS :
  * - Be careful in delete: don’t free extra nodes.
  * - Always return root after recursion, otherwise modifications won’t propagate.
  * - BST must avoid duplicates for correctness (we’ll assume no duplicates).
@@ -265,7 +265,24 @@ Node* deleteRecursive(Node* root, int key) {
         }
     }
     return root;
-}
+} 
+
+/*
+BST Deletion using Inorder Predecessor (brief notes):
+
+1. Predecessor = rightmost node in left subtree (largest value smaller than current node).
+2. To delete a node with two children:
+   - Find predecessor.
+   - Copy predecessor's value to current node.
+   - Recursively delete predecessor from left subtree.
+3. Why it works:
+   - Replacing with predecessor preserves BST property:
+       * All nodes in left subtree < new value
+       * All nodes in right subtree > new value
+   - Only the predecessor node is removed, maintaining the rest of the tree intact.
+4. Result: BST remains valid, node is effectively deleted, structure slightly differs from using successor.
+*/
+
 
 // -----------------------------------------------------
 // DELETION (ITERATIVE)
