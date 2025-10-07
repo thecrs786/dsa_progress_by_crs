@@ -447,7 +447,10 @@
     - Most Optimized(299)
     Category: Tree, DFS, BFS, Binary Tree, BST
 
-
+96. Construct Binary Search Tree From Preorder Traversal - (1008)
+    - Brute Force(300)
+    - Most Optimized(301)
+    Category: Array, Stack, Tree, BST, Monotonic Stack, Binary Tree
 
 
 --> GEEKSFORGEEKS
