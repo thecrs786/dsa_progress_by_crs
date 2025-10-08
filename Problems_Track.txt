@@ -452,6 +452,20 @@
     - Most Optimized(301)
     Category: Array, Stack, Tree, BST, Monotonic Stack, Binary Tree
 
+97. Recover Binary Search Tree - (99)
+    - Optimized(303)
+    - Most Optimized(304)
+    Category: BST, DFS, Binary Tree
+
+98. Populating Next Right Pointers In Each Node - (116)
+    - Optimized(307)
+    - Most Optimized(308)
+    Category: Linked List, Tree, DFS, BFS, Binary Tree
+
+99. Binary Search Tree Iterator - (173)
+    - Most Optimized(309)
+    Category: Stack, Tree, BST, Binary Tree, Iterator
+
 
 --> GEEKSFORGEEKS
 
@@ -515,3 +529,15 @@
 13. Transform To Sum Tree
     - Most Optimized(280)
     Category: Tree, Binary Tree
+
+14. Largest Binary Search Tree In Binary Tree
+    - Brute Force(305)
+    - Most Optimized(306)
+    Category: BST, DFS, Sorting, Binary Tree
+
+
+--> OTHERS
+
+1. Merge Two Binary Search Trees
+    - Optimized(302)
+    Category: BST, Divide And Conquer, Sorting, Balanced Tree
