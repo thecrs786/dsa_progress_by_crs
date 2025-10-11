@@ -541,3 +541,8 @@
 1. Merge Two Binary Search Trees
     - Optimized(302)
     Category: BST, Divide And Conquer, Sorting, Balanced Tree
+
+2. Inorder Predecessor And Successor In Binary Search Tree
+    - Optimized(310)
+    Category: Binary Search Tree, DFS, Binary Tree, Tree
+
