@@ -313,6 +313,9 @@ rough.cpp
 308_PopulatingNextRightPointersInEachNode_Leetcode_116_MostOptimized.cpp
 309_BinarySearchTreeIterator_Leetcode_173_MostOptimized.cpp
 310_InorderPredecessorAndSuccessorInBinarySearchTree_Problem_MostOptimize.cpp
+311_Graphs.cpp
+312_Graphs_BreadthFirstSearch.cpp
+
 
 README.md
 .vscode
