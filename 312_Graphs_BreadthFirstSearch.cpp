@@ -1,223 +1,197 @@
 #include <iostream>
-#include <list>
-#include <queue>
 #include <vector>
+#include <list>
+#include <queue> // Required for BFS
 using namespace std;
 
 /*
 
-BFS -> Breadth-First Search:
-- BFS is a graph traversal algorithm.
-- It explores vertices in the order of their distance from the starting node (level by level).
-- Immediate neighbors of a node are visited before moving to the next level neighbors.
-- BFS is widely used in:
-    - Finding shortest paths in unweighted graphs
-    - Checking connectivity
-    - Level-order traversal in trees
-    - Finding connected components
-    - Solving puzzles (e.g., shortest moves in a maze)
+GRAPH BASICS:
 
-Characteristics of BFS:
-- Uses a queue to maintain order of nodes to visit.
-- Uses a visited array/vector to avoid revisiting nodes.
-- Explores all nodes at distance d before nodes at distance d+1.
-- Can be adapted for both directed and undirected graphs.
+A graph G = (V, E) consists of:
+- V: Set of vertices (nodes)
+- E: Set of edges (connections between nodes)
 
-Time Complexity (TC):
-- O(V + E) for adjacency list
-- V = number of vertices, E = number of edges
-- Each vertex is enqueued and dequeued at most once, and each edge is explored once.
+Types of graphs:
+1. Directed Graph (Digraph): edges have direction u -> v
+2. Undirected Graph: edges have no direction u - v
+3. Weighted Graph: edges carry a weight (distance, cost, etc.)
+4. Unweighted Graph: edges have no weight
+5. Cyclic / Acyclic: cycles exist or not
+6. Sparse / Dense: few edges or many edges relative to nodes
 
-Memory Complexity (MC):
-- O(V) for visited array
-- O(V) for queue in worst case (all vertices in queue)
-- So overall O(V + E) for adjacency list storage
-
-Relation to Trees:
-- BFS on a graph is equivalent to **level-order traversal in trees**
-- In trees, BFS visits nodes level by level using a queue
-- Graph BFS handles cycles and disconnected graphs with visited array
-
+Representation of Graphs:
+1. Adjacency Matrix: 2D array VxV
+   - Easy to check if edge exists
+   - Takes O(V^2) space
+   - Best for dense graphs
+2. Adjacency List: Array/List of lists
+   - Each vertex stores list of neighbors
+   - Takes O(V + E) space
+   - Best for sparse graphs
+   - Can use vector<list<int>> or list<int>* dynamically
 */
 
 class Graph {
     int V;              // Number of vertices
-    list<int>* l;       // Dynamic array of adjacency lists
+    list<int>* l;       // Dynamic array of doubly linked lists to store adjacency lists
 
 public:
 
     // Constructor
     Graph(int V) {
         this->V = V;
-        l = new list<int>[V]; // Create V lists for adjacency
+        /*
+        Allocate memory dynamically:
+        l = new list<int>[V] creates an array of V lists (adjacency lists)
+        Each vertex has its own list of neighbors
+        */
+        l = new list<int>[V];
     }
 
-    // Add an undirected edge between u and v
+    // Add an edge between vertex u and vertex v
     void addEdge(int u, int v) {
         l[u].push_back(v); // Add v to u's adjacency list
-        l[v].push_back(u); // Add u to v's adjacency list (undirected)
+        l[v].push_back(u); // Add u to v's adjacency list (because undirected graph)
     }
 
-    // BFS Traversal from vertex 0
-    void BFS() {
-        queue<int> q;               // Queue to process nodes level by level
-        vector<bool> vis(V, false); // Visited array to avoid revisiting nodes
-
-        q.push(0);      // Start BFS from vertex 0
-        vis[0] = true;  // Mark starting node as visited
-
-        while (!q.empty()) {         // Process until all reachable nodes are visited
-            int u = q.front();       // Get the front node from queue
-            q.pop();                 // Remove it from queue
-            cout << u << " ";        // Process node (here, printing)
-
-            // Visit all neighbors of u
-            for (int v : l[u]) {     
-                if (!vis[v]) {      // If neighbor not visited
-                    vis[v] = true;  // Mark neighbor as visited
-                    q.push(v);      // Enqueue neighbor for later processing
-                }
+    // Print the adjacency list of the graph
+    void printAdjList() {
+        cout << "Adjacency List Representation of Graph:\n";
+        for(int i = 0; i < V; i++) {
+            cout << i << " : ";
+            if(l[i].empty()) {
+                cout << "(no connections)"; // Handle isolated nodes
             }
+            for(int neigh : l[i]) {
+                cout << neigh << " ";
+            }
+            cout << endl;
         }
     }
 
     /*
-    How BFS works on example graph:
+    BREADTH-FIRST SEARCH (BFS)
 
-    Graph:
-          0
-          |
-          1
-         / \
-        2---3
-        |
-        4
-
-    Step by step BFS traversal starting from 0:
-    - Start at 0: visit 0
-        Queue: [0] -> pop 0 -> visit neighbors [1]
-        Queue: [1]
-    - Visit 1: visit 1
-        Queue: [1] -> pop 1 -> visit neighbors [0,2,3], 0 already visited
-        Queue: [2,3]
-    - Visit 2: visit 2
-        Queue: [2,3] -> pop 2 -> visit neighbors [1,3,4], 1 and 3 already visited
-        Queue: [3,4]
-    - Visit 3: visit 3
-        Queue: [3,4] -> pop 3 -> neighbors [1,2] already visited
-        Queue: [4]
-    - Visit 4: visit 4
-        Queue: [4] -> pop 4 -> neighbors [2] already visited
-        Queue: []
-    Final BFS order: 0 1 2 3 4
-
-    Note: BFS guarantees **shortest path in unweighted graphs** from source.
+    - BFS is a graph traversal algorithm that explores vertices level by level.
+      It visits all neighbors of a node before moving to the next level neighbors.
+    - BFS uses a queue to maintain the order of traversal.
+    - Characteristics:
+        - Explores neighbors first, then neighbors of neighbors.
+        - Time Complexity: O(V + E)
+        - Space Complexity: O(V) for visited array + O(V) for queue in worst case
+        - Works for both connected and disconnected graphs.
+        - Commonly used in:
+            - Finding shortest path in unweighted graphs
+            - Checking connectivity
+            - Level-order traversal in trees
+            - Detecting bipartiteness
     */
 
-    // BFS traversal from any given source
-    void BFS_from(int src) {
-        queue<int> q;
-        vector<bool> vis(V, false);
+    // BFS from a given source vertex
+    void bfsHelper(int src, vector<bool>& vis) {
+        queue<int> q;         // Queue for BFS
+        q.push(src);          // Start BFS from source
+        vis[src] = true;      // Mark source as visited
 
-        q.push(src);      // Start from given source
-        vis[src] = true;
+        cout << src << " ";   // Print the starting node
 
-        while (!q.empty()) {
-            int u = q.front(); 
-            q.pop();
-            cout << u << " ";
+        while(!q.empty()) {
+            int node = q.front(); // Get the front node
+            q.pop();              // Remove it from queue
 
-            for (int v : l[u]) {
-                if (!vis[v]) {
-                    vis[v] = true;
-                    q.push(v);
+            // Visit all unvisited neighbors
+            for(int neigh : l[node]) {
+                if(!vis[neigh]) {
+                    q.push(neigh);   // Add neighbor to queue
+                    vis[neigh] = true; // Mark neighbor as visited
+                    cout << neigh << " "; // Print neighbor immediately when visited
                 }
             }
         }
     }
-};
-/*
-        WARNING:
 
-        
-NOTE ON VISITED ARRAY WHILE PRINTING ADJACENCY LIST:
+    // BFS that handles disconnected components automatically
+    void bfs() {
+        vector<bool> vis(V, false);  // Track visited nodes
+        cout << "\nBFS Traversal (handling disconnected components): ";
 
-1. When we print an adjacency list, we are NOT traversing the graph.
-   - We are just iterating over each vertex's neighbors.
-   - No recursion or queue is used, so cycles cannot cause infinite loops.
-   - Therefore, marking nodes as visited while printing is unnecessary.
+        for(int i = 0; i < V; i++) {
+            if(!vis[i]) {
+                // If node is not visited, start BFS from this node
+                bfsHelper(i, vis);
+            }
+        }
 
-2. What can go wrong if we mark nodes as visited while printing:
-   - If we later perform BFS or DFS on the same graph using the same visited array,
-     some nodes may already appear as visited.
-   - This will cause the traversal to skip those nodes.
-   - Result: BFS/DFS traversal may become incomplete.
-
-Example:
-
-Graph g(3);
-g.addEdge(0, 1);
-g.addEdge(1, 2);
-
-vector<bool> vis(3, false);
-
-for (int i = 0; i < 3; i++) {
-    for (int neigh : g.l[i]) {
-        vis[neigh] = true; // WRONG: marking visited while printing
-        cout << neigh << " ";
+        cout << endl;
     }
-}
+};
 
-// Later, BFS starting from vertex 0
-g.BFS(); 
-// Node 1 is already marked visited from printing
-// BFS will skip it
-// Output will be incomplete, not visiting all nodes
-
-3. Key takeaway:
-- Printing adjacency lists: NO visited array required.
-- BFS/DFS traversals: visited array is REQUIRED to avoid infinite loops due to cycles.
-- Mixing the two can silently break traversal algorithms.
-
-*/
 int main() {
-    // Example 1: Original graph
-    Graph g1(5);
+    Graph g(7); // Create a graph with 7 vertices (0 to 6)
 
-    g1.addEdge(0, 1);
-    g1.addEdge(1, 2);
-    g1.addEdge(1, 3);
-    g1.addEdge(2, 3);
-    g1.addEdge(2, 4);
+    // Adding edges for first connected component (main graph)
+    g.addEdge(0, 1);
+    g.addEdge(1, 2);
+    g.addEdge(1, 3);
+    g.addEdge(2, 3);
 
-    cout << "BFS traversal starting from vertex 0 (Example 1): ";
-    g1.BFS();
-    cout << endl;
+    // Second connected component: 4 linked with 5
+    g.addEdge(4, 5);
 
-    // Example 2: Slightly disconnected graph
-    Graph g2(6);
-    g2.addEdge(0, 1);
-    g2.addEdge(0, 2);
-    g2.addEdge(3, 4);
-    g2.addEdge(4, 5);
+    // Third component: vertex 6 is completely isolated (no edges)
 
-    cout << "BFS traversal starting from vertex 0 (Example 2): ";
-    g2.BFS_from(0); // BFS only covers connected component containing 0
-    cout << endl;
+    /*
+    Diagram of the graph:
 
-    cout << "BFS traversal starting from vertex 3 (Example 2): ";
-    g2.BFS_from(3); // BFS for disconnected component
-    cout << endl;
+          0
+          |
+          1
+         / \
+        2---3         4---5        6
+
+    Adjacency List Representation:
+    0 : 1
+    1 : 0 2 3
+    2 : 1 3
+    3 : 1 2
+    4 : 5
+    5 : 4
+    6 : (no connections)
+    */
+
+    g.printAdjList(); // Print adjacency list of the graph
+
+    // Perform BFS traversal — will automatically detect multiple sources
+    g.bfs();
+
+    /*
+    OUTPUT:
+
+    Adjacency List Representation of Graph:
+    0 : 1
+    1 : 0 2 3
+    2 : 1 3
+    3 : 1 2
+    4 : 5
+    5 : 4
+    6 : (no connections)
+
+    BFS Traversal (handling disconnected components): 0 1 2 3 4 5 6
+
+    Explanation of BFS Traversal:
+    - Start from 0 → visit neighbors 1 → visit neighbors of 1 → 2 and 3
+    - All vertices of first component are visited (0,1,2,3)
+    - Move to 4 (unvisited) → visit 5
+    - Move to 6 (isolated) → visit it
+    - BFS ensures all nodes are visited even if graph is disconnected.
+    - The traversal visits nodes in levels:
+        Level 0: 0
+        Level 1: 1
+        Level 2: 2, 3
+        Level 3: 4, 5
+        Level 4: 6 (isolated)
+    */
 
     return 0;
 }
-
-/*
-Key Notes:
-- BFS uses queue to maintain **level order**.
-- Visited array prevents cycles from infinite loops.
-- BFS on graphs is the **generalization of level-order traversal in trees**.
-- Examples show BFS in connected and disconnected graphs.
-- Time Complexity: O(V + E)
-- Memory Complexity: O(V + E) (adjacency list + queue + visited array)
-*/
