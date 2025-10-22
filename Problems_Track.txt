@@ -466,6 +466,25 @@
     - Most Optimized(309)
     Category: Stack, Tree, BST, Binary Tree, Iterator
 
+100. Valid Perfect Square - (367)
+    - Optimized(316)
+    Category: Math, Binary Search
+
+101. Find Mode In Binary Search Tree - (501)
+    - Optimized(314)
+    - Most Optimized(315)
+    Category: Tree, DFS, BFS, BST, Binary Tree
+
+102. Remove Linked List Elements - (203)
+    - Optimized(317)
+    - Most Optimized(318)
+    Category: Linked List, Recursion
+
+103. Palindrome Linked List - (234)
+    - Optimized(319)
+    - Most Optimized(320)
+    Category: Linked List, Two Pointers, Stack, Recursion
+
 
 --> GEEKSFORGEEKS
 
