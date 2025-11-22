@@ -1,0 +1,567 @@
+===============================
+     SKIPPED QUESTIONS
+===============================
+
+--> LEETCODE
+
+1. Pow(x, n) - (50)
+   Reason: Requires strong bit manipulation and recursion (fast exponentiation).
+   Category: Math, Binary Exponentiation, Recursion
+   Recommendation: Practice bitwise operations, binary representation.
+
+2. Find the Duplicate Number - (287)
+   Reason: Requires cycle detection (Floyd’s Tortoise & Hare).
+   Category: Linked List, Cycle Detection
+   Recommendation: Learn linked list cycle detection before retrying.
+
+
+===============================
+     SOLVED PROBLEMS
+===============================
+
+--> LEETCODE
+
+1. Single Number - (136)
+   - Brute Force (055)
+   - Most Optimized (056)
+   Category: Bit Manipulation, Hashing
+
+2. Maximum Subarray - (53)
+   - Brute Force (058)
+   - Most Optimized (Kadane’s Algorithm) (059)
+   Category: Dynamic Programming, Greedy
+
+3. Two Sum II - (167)
+   - Brute Force (060)
+   - Brute Force 2 (061)
+   - Most Optimized (062)
+   Category: Two Pointers, Binary Search
+
+4. Majority Element - (169)
+   - Brute Force (063)
+   - Optimized (064)
+   - Most Optimized (Boyer-Moore) (065)
+   Category: Hashing, Voting Algorithm
+
+5. Best Time to Buy and Sell Stock - (121)
+   - Brute Force (066)
+   - Most Optimized (067)
+   Category: Greedy, Dynamic Programming
+
+6. Container With Most Water - (11)
+   - Brute Force (068)
+   - Most Optimized (069)
+   Category: Two Pointers, Greedy
+
+7. Palindrome Number - (9)
+   - Optimized (070)
+   Category: Math, String
+
+8. Product of Array Except Self - (238)
+   - Brute Force (071)
+   - Optimized (072)
+   - Most Optimized (Prefix-Suffix) (073)
+   Category: Prefix-Suffix, Array
+
+9. Binary Search - (704)
+   - Most Optimized (085)
+   - Optimized (086)
+   - Recursion Optimized (183)
+   Category: Binary Search
+
+10. Search in Rotated Sorted Array - (33)
+    - Most Optimized (087)
+    Category: Binary Search, Array
+
+11. Peak Index in a Mountain Array - (852)
+    - Brute Force (088)
+    - Most Optimized (089)
+    Category: Binary Search
+
+12. Single Element in Sorted Array - (540)
+    - Brute Force (090)
+    - Optimized (091)
+    - Most Optimized (092)
+    Category: Binary Search, XOR
+
+13. Color Sort (Sort Colors) - (75)
+    - Brute Force (099)
+    - Optimized (100)
+    - Most Optimized (Dutch National Flag) (101)
+    Category: Two Pointers, Sorting
+
+14. Merge Sorted Array - (88)
+    - Most Optimized (102)
+    Category: Two Pointers, Sorting
+
+15. Next Permutation - (31)
+    - Most Optimized (103)
+    Category: Two Pointers, Math
+
+16. Reverse String - (344)
+    - Most Optimized (128)
+    Category: Two Pointers, String
+
+17. Valid Palindrome - (125)
+    - Most Optimized (129)
+    Category: Two Pointers, String
+
+18. Remove All Occurrences of a Substring - (1910)
+    - Most Optimized (130)
+    Category: String, Stack
+
+19. Permutation in String - (567)
+    - Most Optimized (131)
+    Category: Sliding Window, Hashing
+
+20. Sqrt(x) - (69)
+    - Most Optimized (132)
+    Category: Binary Search, Math
+
+21. Reverse Words in a String - (151)
+    - Optimized (133)
+    Category: String, Two Pointers
+
+22. String Compression - (443)
+    - Most Optimized (134)
+    Category: Two Pointers, String
+
+23. Count Primes - (204)
+    - Optimized (136)
+    Category: Math, Sieve of Eratosthenes
+
+24. Reverse Number - (7)
+    - Most Optimized (145)
+    Category: Math
+
+25. Plus One - (66)
+    - Most Optimized (147)
+    Category: Math, Array
+
+26. Matrix Diagonal Sum - (1572)
+    - Most Optimized (151)
+    Category: Matrix
+
+27. Search a 2D Matrix - (74)
+    - Brute Force (153)
+    - Optimized (154)
+    - Most Optimized (155)
+    Category: Binary Search, Matrix
+
+28. Search a 2D Matrix II - (240)
+    - Optimized (156)
+    - Most Optimized (157)
+    Category: Binary Search, Matrix
+
+29. Spiral Matrix - (54)
+    - Most Optimized (158)
+    Category: Simulation, Matrix
+
+30. Two Sum - (1)
+    - Brute Force (159)
+    - Optimized (160)
+    - Most Optimized (161)
+    Category: Hashing, Two Pointers
+
+31. Find Missing and Repeated Values - (2965)
+    - Most Optimized (162)
+    Category: Hashing, Math
+
+32. Find the Duplicate Number - (287)
+    - Brute Force (163)
+    - Optimized (164)
+    - Most Optimized (Floyd’s Cycle Detection) (165)
+    Category: Binary Search, Linked List Cycle Detection
+
+33. 3Sum - (15)
+    - Brute Force (166)
+    - Optimized (167)
+    - Most Optimized (168)
+    Category: Sorting, Two Pointers
+
+34. Most Common Word - (819)
+    - Most Optimized (169)
+    Category: Hashing, String
+
+35. Smallest Even Multiple - (2413)
+    - Most Optimized (170)
+    Category: Math
+
+36. Power of Four - (342)
+    - Optimized (171)
+    Category: Bit Manipulation, Math
+
+37. Longest Palindrome - (409)
+    - Most Optimized (172)
+    Category: Hashing, String
+
+38. Length of Last Word - (58)
+    - Most Optimized (173)
+    Category: String
+
+39. Maximum 69 Number - (1323)
+    - Optimized (174)
+    Category: Greedy, Math
+
+40. Power of Two - (231)
+    - Optimized (175)
+    Category: Bit Manipulation
+
+41. 4Sum - (18)
+    - Most Optimized (176)
+    Category: Sorting, Two Pointers
+
+42. Subarray Sum Equals K - (560)
+    - Brute Force (177)
+    - Optimized (178)
+    - Most Optimized (179)
+    Category: Prefix Sum, Hashing
+
+43. Fibonacci - (509)
+    - Recursion Optimized (181)
+    Category: DP, Recursion
+
+44. Subsets - (78)
+    - Most Optimized (185)
+    Category: Backtracking, Bitmask
+
+45. Subsets II - (90)
+    - Most Optimized (186)
+    Category: Backtracking, Bitmask
+
+46. Permutations - (46)
+    - Most Optimized (187)
+    Category: Backtracking
+
+47. N-Queens - (51)
+    - Most Optimized (188)
+    Category: Backtracking
+
+48. Sudoku Solver - (37)
+    - Optimized (189)
+    Category: Backtracking, Recursion
+
+49. Combination Sum - (39)
+    - Most Optimized (192)
+    Category: Backtracking
+
+50. Palindrome Partitioning - (131)
+    - Optimized (193)
+    Category: Backtracking
+
+51. Check Knight Configuration Tour - (2596)
+    - Optimized(198)
+    - More Optimized(199)
+    Category: Backtracking With DFS
+
+52. Reverse Linked List - (206)
+    - Most Optimized(213)
+    Category: Linked List, Pointers
+
+53. Middle Of the Linked List - (876)
+    - Optimized(214)
+    - Most Optimized(215)
+    Category: Linked List, Slow and Fast Pointer
+
+54. Linked List Cycle - (141)
+    - Most Optimized(216)
+    Category: Cycle in Linked List, Slow and Fast Pointers, Floyd's Cycle Detection
+
+55. Linked List Cycle II - (142)
+    - Most Optimized(217)
+    Category: Cycle in Linked List, Slow and Fast Pointers, Floyd's Cycle Detection, Detecting Starting of cycle
+
+56. Merge Two Sorted Lists - (21)
+    - Most Optimized(218)
+    Category: Linked List, Recursion, Merge(Sorting)
+
+57. Copy List With Random Pointer - (138)
+    - Optimized(219)
+    Category: Linked List, Hashing, Deep Copy
+
+58. Valid Sudoku - (36)
+    - Optimized(220)
+    Category: Recursion, Vector
+
+59. Power Of Three - (326)
+    - Optimized(221)
+    Category: Bit Manipulation, Math
+
+60. Flatten A Multilevel Doubly Linked List - (430)
+    - Optimized(224)
+    Category: Recursion, Linked List, Pointer Manipulation
+
+61. Reverse Nodes In k-Group - (25)
+    - Optimized(225)
+    Category: Linked List, Recursion
+
+62. Swap Nodes In Pairs - (24)
+    - Optimized(226) :Using recursion
+    - Optimized(227) : Using single iteration
+    Category: Linked List, Recursion
+
+63. Valid Parenthesis-(20)
+    - Most Optimized(230)
+    Category: Stack, LIFO, 
+
+64. Online Stock Span - (901)
+    - Most Optimized :
+        -> Using Function [NOT LEETCODE STYLE] (231)
+        -> Using Class and Function [FOR LEETCODE] (232)
+
+65. Next Greater Element I - (496)
+    - Brute Force (233)
+    - Most Optimized(234)
+    Category: Stack, Hashing, LIFO
+
+66. Add Two Numbers - (02)
+    - Most Optimized(236)
+    Category: Linked List, Math, Stimulation
+
+67. Min Stack - (155)
+    - Optimized(237)
+    - Most Optimized(238)
+    Category: Stack, Stack Training
+
+68. Largest Rectangle In Histogram - (84)
+    - Brute Force(239)
+    - Most Optimized(240)
+    Category: Stack, Vector
+
+69. Next Greater Element II - (503)
+    - Brute Force(241)
+    - Optimized(242)
+    - Most Optimized(243)
+    Category: Array, Stack, Monotonic Stack
+
+70. Remove Nth Node From End Of The List - (19)
+    - Optimized(244)
+    Category: Linked List, Two Pointers
+
+71. Trapping Rainwater - (42)
+    - Brute Force(245)
+    - Optimized(246)
+    - Most Optimized(247)
+    Category: Array, Two Pointers, DP, Prefix Array, Monotonic Stack
+
+72. LRU Cache (146)
+    - Most Optimized(250)
+    Category: Hash Table, Design, Linked List, Doubly Linked List
+
+73. Implement Stack Using Queues - (225)
+    - Most Optimized(254)
+    Category: Stack, Queue, Design
+
+74. Implement Queue Using Stacks - (232)
+    - Most Optimized(255)
+    Category: Stack, Queue, Design
+
+75. First Unique Character In A String - (387)
+    - Optimized(256)
+    - Most Optimized(257)
+    Category: Hashing, String, Queue
+
+76. Sliding Window Maximum - (239)
+    - Brute Force(258)
+    - Most Optimized(259)
+    Category: Array, Queue, Sliding Window
+
+77. Gas Station - (134)
+    - Most Optimized(260)
+    Category: Array, Greedy 
+
+78. Same Tree - (100)
+    - Most Optimized(269)
+    Category: Tree, DFS, BFS, Binary Tree
+
+79. Subtree Of Another Tree - (572)
+    - Optimized(270)
+    Category: Tree, Binary Tree, Hashing, DFS
+
+80. Diameter Of A Binary Tree - (543)
+    - Optimized(271)
+    - Most Optimized(272)
+    Category: Tree, DFS, Binary Tree
+
+81. Lowest Common Ancestor - (236)
+    - Most Optimized(278)
+    Category: Tree, DFS, Binary Tree
+
+82. Construct Binary Tree From PreOrder and InOrder Traversal - (105)
+    - Optimized(279)
+    Category: Array, Hash Table, Divide And Conquer, Tree, Binary Tree
+
+83. Binary Tree Paths - (257)
+    - Most Optimized(281)
+    Category: Binary Tree, Backtracking, DFS, String
+
+84. Maximum Width Of Binary Tree - (662)
+    - Most Optimized(282)
+    Category: Binary Tree, DFS, 
+
+85. Binary Tree Inorder Traversal - (94)
+    - Optimized(283)
+    - Most Optimized(284)
+    Category: Binary Tree, DFS, Stack, Morris Inorder Traversal
+
+86. Flatten Binary Tree To Linked List - (114)
+    - Optimized(285)
+    - Most Optimized(286)
+    Category: Binary Tree, Linked List, DFS, Stack
+
+87. Binary Tree Level Order Traversal - (102)
+    - Most Optimized(287)
+    Category : Binary Tree, DFS, Binary Tree
+
+88. Maximum Depth Of Binary Tree - (104)
+    - Most Optimized(288)
+    Category: Tree, DFS, BFS, Binary Tree
+
+89. Search In A Binary Search Tree - (700)
+    - Most Optimized(290)
+    Category: Tree, Binary Search Tree (BST), Binary Tree
+
+90. Convert Sorted Array To Binary Search Tree - (108)
+    - Most Optimized(291) 
+    Category: Array, BST, Divide And Conquer, Binary Tree
+
+91. Validate Binary Search Tree - (98)
+    - Most Optimized(292)
+    Category: Tree, DFS, BST, Binary Tree
+
+92. Minimum Distance Between BST Nodes - (783)
+    - Optimized(293)
+    - Optimized_2(294)
+    - Most Optimized(295)
+    Category: Tree, DFS, BFS, BST, Binary Tree
+
+93. Minimum Absolute Difference In BST - (530)
+    - Most Optimized(296)
+    Category: Tree, DFS, BFS, BST, Binary Tree
+
+94. Kth Smallest Element In A BST - (230)
+    - Most Optimized(298)
+    Category: Tree, DFS, BST, Binary Tree
+
+95. Lowest Common Ancestor Of A Binary Search Tree - (235)
+    - Most Optimized(299)
+    Category: Tree, DFS, BFS, Binary Tree, BST
+
+96. Construct Binary Search Tree From Preorder Traversal - (1008)
+    - Brute Force(300)
+    - Most Optimized(301)
+    Category: Array, Stack, Tree, BST, Monotonic Stack, Binary Tree
+
+97. Recover Binary Search Tree - (99)
+    - Optimized(303)
+    - Most Optimized(304)
+    Category: BST, DFS, Binary Tree
+
+98. Populating Next Right Pointers In Each Node - (116)
+    - Optimized(307)
+    - Most Optimized(308)
+    Category: Linked List, Tree, DFS, BFS, Binary Tree
+
+99. Binary Search Tree Iterator - (173)
+    - Most Optimized(309)
+    Category: Stack, Tree, BST, Binary Tree, Iterator
+
+100. Valid Perfect Square - (367)
+    - Optimized(316)
+    Category: Math, Binary Search
+
+101. Find Mode In Binary Search Tree - (501)
+    - Optimized(314)
+    - Most Optimized(315)
+    Category: Tree, DFS, BFS, BST, Binary Tree
+
+102. Remove Linked List Elements - (203)
+    - Optimized(317)
+    - Most Optimized(318)
+    Category: Linked List, Recursion
+
+103. Palindrome Linked List - (234)
+    - Optimized(319)
+    - Most Optimized(320)
+    Category: Linked List, Two Pointers, Stack, Recursion
+
+
+--> GEEKSFORGEEKS
+
+1. Book Allocation Problem (093)
+   Category: Binary Search, Greedy
+
+2. Painter’s Partition Problem (094)
+   Category: Binary Search, Greedy
+
+3. Aggressive Cows Problem (095)
+   Category: Binary Search, Greedy
+
+4. Sorting Algorithms
+   - Bubble Sort (096) (Category: Sorting, Brute Force)
+   - Selection Sort (097) (Category: Sorting, Brute Force)
+   - Insertion Sort (098) (Category: Sorting, Brute Force)
+
+   - Merge Sort (194) (Category: Sorting, Divide and Conquer)
+   - Quick Sort (195) (Category: Sorting, Divide and Conquer, Pivot Partition)
+
+5. GCD
+   - Brute Force (140)
+   - Most Optimized (141)
+   - Most Optimized 2 (142)
+   Category: Math, Number Theory
+
+6. LCM
+   - Brute Force (143)
+   - Most Optimized (144)
+   Category: Math, Number Theory
+
+7. Rat in a Maze
+   - Most Optimized (190)
+   - Optimized (191)
+   Category: Backtracking, Recursion
+
+8. Count Inversions
+   - Brute Force (196)
+   - Most Optimized (197)
+   Category: Backtracking, Merge Sort
+
+9. The Celebrity Problem
+   - Brute Force(248)
+   - Optimized(249)
+   Category: Stack, Two Pointer, Array
+
+10. Top View Of A Binary Tree
+    - Optimized(273)
+    - Most ptimized(274)
+    Category: Binary Tree, DFS/Recursion, BFS/LevelOrder
+
+11. Bottom View Of A Binary Tree
+    - Optimized(275)
+    - Most Optimized(276)
+    Category: Binary Tree, DFS/Recursion, BFS/LevelOrder
+
+12. Kth Level Of A Binary Tree 
+    - Optimized(277)
+    Category: Tree, Level Order Traversal, Binary Tree, DFS
+
+13. Transform To Sum Tree
+    - Most Optimized(280)
+    Category: Tree, Binary Tree
+
+14. Largest Binary Search Tree In Binary Tree
+    - Brute Force(305)
+    - Most Optimized(306)
+    Category: BST, DFS, Sorting, Binary Tree
+
+
+--> OTHERS
+
+1. Merge Two Binary Search Trees
+    - Optimized(302)
+    Category: BST, Divide And Conquer, Sorting, Balanced Tree
+
+2. Inorder Predecessor And Successor In Binary Search Tree
+    - Optimized(310)
+    Category: Binary Search Tree, DFS, Binary Tree, Tree
+
